@@ -1,4 +1,5 @@
 FROM innovanon/doom-base as fdo
+USER root
 RUN sleep 91                                                              \
  && apt update \
  && apt install -y libtool autoconf automake git libelf-dev libssl-dev pkg-config \
